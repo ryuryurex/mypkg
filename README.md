@@ -20,9 +20,9 @@
 $ 
 ```
 
-### robosys2024に移動してください。
+### に移動してください。
 ```shell
-$ cd robosys2024
+$ cd 
 ```
 
 ## なまえ
@@ -30,8 +30,7 @@ $ cd robosys2024
 
 ### 使用例
 ```shell
-$ echo 5 | ./passgenerater
-WB31I
+$ 
 ```
 
 
