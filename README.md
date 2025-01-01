@@ -3,6 +3,8 @@
 [![test]()
 [![License](https://img.shields.io/badge/License-BSD--3--Clause-blue.svg)](https://github.com/ryuryurex/mypkg/blob/main/LICENSE)
 
+## yahoo
+
 ## 概要
 - ロボットシステム学の授業で作成したリポジトリです。
 
