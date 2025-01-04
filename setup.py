@@ -25,6 +25,7 @@ setup(
         'console_scripts': [
             'talker = mypkg.talker:main', #talker.pyのmain関数という意味
             'listener = mypkg.listener:main',
+	    'statuspublisher = mypkg.statuspublisher:main',
         ],
     },
 )

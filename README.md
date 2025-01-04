@@ -3,18 +3,13 @@
 [![test]()
 [![License](https://img.shields.io/badge/License-BSD--3--Clause-blue.svg)](https://github.com/ryuryurex/mypkg/blob/main/LICENSE)
 
-## yahoo
-
 ## 概要
 - ロボットシステム学の授業で作成したリポジトリです。
 
 ## テスト済みの環境
-### ローカル
 * Ubuntu 20.04.6 LTS
-* Python 3.8.10
-### GitHub Actions
-* Ubuntu 20.04
-* Python: 3.7~3.11
+* ROS2 Humble Hawksbil
+
 ## 使用準備
 
 ### このコマンドでリポジトリを適当な場所にクローンしてください。
