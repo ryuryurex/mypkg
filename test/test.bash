@@ -13,7 +13,7 @@ colcon build
 source $dir/.bashrc
 
 timeout 60 ros2 launch mypkg talk_listen.launch.py > /tmp/weather_publisher.log
-
+sleep 10
 count=$(cat /tmp/weather_publisher.log | grep -c 'weather_info_listener')
 
 if [ "$count" -ge 2 ]; then
