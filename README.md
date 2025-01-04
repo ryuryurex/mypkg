@@ -4,41 +4,54 @@
 [![License](https://img.shields.io/badge/License-BSD--3--Clause-blue.svg)](https://github.com/ryuryurex/mypkg/blob/main/LICENSE)
 
 ## 概要
-- ロボットシステム学の授業で使用したROS2パッケージ
-- APIによって習志野市の気象情報をパブリッシュするもの
+- ロボットシステム学の授業で使用したROS2パッケージです。
+- [Open-Meteo API](https://open-meteo.com/)によって習志野市の気象情報をトピックにパブリッシュします。
+- 千葉県習志野市の天気情報を10秒ごとにweather_infoトピックにパブリッシュします。左から気温、風速、タイムスタンプで表示します。
+listener.pyおよび，talk_listen.launch.pyはテスト用です。
 
 ## テスト済みの環境
-* Ubuntu 20.04.6 LTS
+* Ubuntu 22.04.6 LTS
 * ROS2 Humble Hawksbil
 
 ## 使用準備
 
-### このコマンドでリポジトリを適当な場所にクローンしてください。
+### このコマンドで適当な場所にクローンしてください。
 ```shell
-$ 
+$ https://github.com/ryuryurex/mypkg.git
 ```
 
 ### 実行方法
 ```shell
-$ cd  ~/ros2_ws/
-```
-```shell
 $ colcon build
 ```
-```shell
-$ source ~/.bashrc
-```
-```shell
+```shellこのコマンドで実行します
 $ ros2 run mypkg weather_publisher
 ```
 
-### 使用例
+### トピックの内容はこのコマンドで確認できます
 ```shell
-$  ros2 topic echo /weather_info
+$  ros2 topic echo weather_info
+```
+
+```shell
+data: 3.3,8.5,2025-01-05 02:18:46
+---
+data: 3.3,8.5,2025-01-05 02:18:56
+---
+data: 3.3,8.5,2025-01-05 02:19:06
+---
+data: 3.3,8.5,2025-01-05 02:19:16
+---
+data: 3.3,8.5,2025-01-05 02:19:26
+---
+data: 3.3,8.5,2025-01-05 02:19:36
+---
 ```
 
 ## LICENSE
 * このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
+* このパッケージのコードの一部は，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
+    * [ryuichiueda/slides_marp/tree/master/robosys_2024](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2024)
 
 ## Copyright
-* © 2024 Ryusei Noda
+* © 2025 Ryusei Noda
