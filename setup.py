@@ -24,7 +24,7 @@ setup(
     entry_points={
         'console_scripts': [
             'weather_publisher = mypkg.weather_publisher:main',
-            'weather_listener = mypkg.weather_listener:main',
+            'listener = mypkg.listener:main',
         ],
     },
 )
