@@ -25,8 +25,8 @@ setup(
         'console_scripts': [
             'talker = mypkg.talker:main',
             'listener = mypkg.listener:main',
-            'statuspublisher = mypkg.statuspublisher:main',
-            'weather_publisher = mypkg.weather_publisher:main',  # 追加
+            'weather_publisher = mypkg.weather_publisher:main',
+            'weather_listener = mypkg.weather_listener:main',
         ],
     },
 )

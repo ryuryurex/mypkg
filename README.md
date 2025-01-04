@@ -4,7 +4,8 @@
 [![License](https://img.shields.io/badge/License-BSD--3--Clause-blue.svg)](https://github.com/ryuryurex/mypkg/blob/main/LICENSE)
 
 ## 概要
-- ロボットシステム学の授業で作成したリポジトリです。
+- ロボットシステム学の授業で使用したROS2パッケージ
+- APIによって習志野市の気象情報をパブリッシュするもの
 
 ## テスト済みの環境
 * Ubuntu 20.04.6 LTS
