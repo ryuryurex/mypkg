@@ -17,19 +17,24 @@
 $ 
 ```
 
-### に移動してください。
+### 実行方法
 ```shell
-$ cd 
+$ cd  ~/ros2_ws/
 ```
-
-## なまえ
-せつめい
+```shell
+$ colcon build
+```
+```shell
+$ source ~/.bashrc
+```
+```shell
+$ ros2 run mypkg 
+```
 
 ### 使用例
 ```shell
 $ 
 ```
-
 
 ## LICENSE
 * このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
