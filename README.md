@@ -7,20 +7,21 @@
 - ロボットシステム学の授業で使用したROS2パッケージです。
 - [Open-Meteo API](https://open-meteo.com/)によって習志野市の気象情報をトピックにパブリッシュします。
 - 千葉県習志野市の天気情報を10秒ごとにweather_infoトピックにパブリッシュします。左から気温、風速、タイムスタンプで表示します。
-listener.pyおよび，talk_listen.launch.pyはテスト用です。
+- listener.pyおよび，talk_listen.launch.pyはテスト用です。
 
-## テスト済みの環境
+## テスト環境
 * Ubuntu 22.04.6 LTS
 * ROS2 Humble Hawksbil
 
-## 使用準備
+## 開発環境
+* ubuntu20.04 LTS
+* ROS2 Humble Hawksbil
 
+## 使用方法
 ### このコマンドで適当な場所にクローンしてください。
 ```shell
 $ https://github.com/ryuryurex/mypkg.git
 ```
-
-### 実行方法
 ```shell
 $ colcon build
 ```
@@ -32,7 +33,6 @@ $ ros2 run mypkg weather_publisher
 ```shell
 $  ros2 topic echo weather_info
 ```
-
 ```shell
 data: 3.3,8.5,2025-01-05 02:18:46
 ---
