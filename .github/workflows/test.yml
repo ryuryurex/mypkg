@@ -33,6 +33,8 @@ jobs:
       # ROS 2のテストスクリプト実行
       - name: Run test script
         run: |
+          source /opt/ros/foxy/setup.bash
+          source /root/ros2_ws/install/setup.bash
           cd /root/ros2_ws/src/mypkg/test
           bash -xv ./test.bash
 
