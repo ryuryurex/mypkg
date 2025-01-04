@@ -29,7 +29,7 @@ class WeatherPublisher(Node):
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
             msg = String()
-            msg.data = f"{temperature},{wind_speed},{timestamp}"
+            msg.data = f"Temperature: {temperature}°C, Wind Speed: {wind_speed} km/h, Time: {timestamp}. Data provided by Open-Meteo.com"
             self.publisher_.publish(msg)
         else:
             self.get_logger().warn(f"天気データの取得に失敗しました。HTTPステータスコード: {response.status_code}")
