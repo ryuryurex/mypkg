@@ -24,18 +24,18 @@
 * ROS2 Foxy
 
 ## 使用方法
-### このコマンドで適当な場所にクローンしてください。
+このコマンドで適当な場所にクローンしてください。
 ```shell
 $ https://github.com/ryuryurex/mypkg.git
 ```
 ```shell
 $ colcon build
 ```
-```shellこのコマンドで実行します
+```shell
 $ ros2 run mypkg weather_publisher
 ```
 
-### トピックの内容はこのコマンドで確認できます
+トピックの内容はこのコマンドで確認できます
 ```shell
 $  ros2 topic echo weather_info
 ```
