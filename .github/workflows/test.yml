@@ -20,7 +20,7 @@ jobs:
           bash -xv ./src/mypkg/test/test.bash /root
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: build-logs
           path: /tmp/weather_publisher.log
