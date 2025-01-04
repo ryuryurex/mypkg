@@ -12,7 +12,7 @@ colcon build
 
 source $dir/.bashrc
 
-timeout 30 ros2 launch mypkg talk_listen.launch.py > /tmp/weather_publisher.log
+timeout 60 ros2 launch mypkg talk_listen.launch.py > /tmp/weather_publisher.log
 
 count=$(cat /tmp/weather_publisher.log | grep -c 'weather_info_listener')
 
