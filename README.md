@@ -1,6 +1,6 @@
 # mypkg
 
-[![test]()
+[![test](https://github.com/ryuryurex/mypkg/actions)
 [![License](https://img.shields.io/badge/License-BSD--3--Clause-blue.svg)](https://github.com/ryuryurex/mypkg/blob/main/LICENSE)
 
 ## 概要
@@ -28,12 +28,12 @@ $ colcon build
 $ source ~/.bashrc
 ```
 ```shell
-$ ros2 run mypkg 
+$ ros2 run mypkg weather_publisher
 ```
 
 ### 使用例
 ```shell
-$ 
+$  ros2 topic echo /weather_info
 ```
 
 ## LICENSE
