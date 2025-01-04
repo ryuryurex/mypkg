@@ -13,7 +13,7 @@
 天気情報を10秒ごとに取得し、トピックにパブリッシュします。
 ## トピック
 - weather_info
-ノードからパブリッシュされたデータ(気温（摂氏）、風速（km/h）、タイムスタンプ（YYYY-MM-DD HH:MM:SS）)を持ちます
+ノードからパブリッシュされたデータ(気温（摂氏）、風速（km/h）、タイムスタンプ（YYYY-MM-DD HH:MM:SS）)を持ちます。
 
 ## テスト環境
 * Ubuntu 22.04 LTS
@@ -31,11 +31,12 @@ $ https://github.com/ryuryurex/mypkg.git
 ```shell
 $ colcon build
 ```
+このコマンドで実行します。
 ```shell
 $ ros2 run mypkg weather_publisher
 ```
 
-トピックの内容はこのコマンドで確認できます
+トピックの内容はこのコマンドで確認できます。
 ```shell
 $  ros2 topic echo weather_info
 ```
