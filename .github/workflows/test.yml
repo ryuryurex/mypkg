@@ -1,63 +1,20 @@
-name: ROS 2 Test
-
+name: test
 on: push
-
 jobs:
   test:
     runs-on: ubuntu-22.04
     container: ryuichiueda/ubuntu22.04-ros2:latest
-
     steps:
-      # リポジトリをチェックアウト
       - uses: actions/checkout@v2
 
-      # 依存関係のインストール
-      - name: Install dependencies
+      - name: Install pip and requests
         run: |
           apt-get update
-          apt-get install -y python3-pip python3-colcon-common-extensions
+          apt-get install -y python3-pip
           pip3 install requests
 
-      # ROS 2のセットアップ
-      - name: Source ROS 2 setup
+      - name: build and test
         run: |
-          source /opt/ros/foxy/setup.bash
-          source /root/ros2_ws/install/setup.bash
-          
-          # 確認用コマンドを実行
-          ros2 --version
-          colcon --version
-
-      # ワークスペースのビルド
-      - name: Build workspace
-        run: |
+          rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
-          colcon build
-
-      # ROS 2のテストスクリプト実行
-      - name: Run test script
-        run: |
-          source /opt/ros/foxy/setup.bash
-          source /root/ros2_ws/install/setup.bash
-          cd /root/ros2_ws/src/mypkg/test
-          bash -xv ./test.bash
-
-      # ログファイルをアップロード（ビルド結果やエラーログの確認用）
-      - name: Upload build logs
-        uses: actions/upload-artifact@v3
-        with:
-          name: build-logs
-          path: /tmp/weather_publisher.log
-          
-      # テスト結果の解析（`weather_info_listener`がログに含まれていることを確認）
-      - name: Analyze test results
-        run: |
-          count=$(cat /tmp/weather_publisher.log | grep -c 'weather_info_listener')
-          if [ "$count" -ge 2 ]; then
-            echo "Test passed: Found $count entries."
-            exit 0
-          else
-            echo "Test failed: Found only $count entries."
-            exit 1
-          fi
-
+          bash -xv ./src/mypkg/test/test.bash /root
