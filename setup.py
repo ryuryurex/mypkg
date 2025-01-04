@@ -23,8 +23,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = mypkg.talker:main',
-            'listener = mypkg.listener:main',
             'weather_publisher = mypkg.weather_publisher:main',
             'weather_listener = mypkg.weather_listener:main',
         ],
