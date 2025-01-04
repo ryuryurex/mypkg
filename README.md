@@ -10,12 +10,12 @@
 - listener.pyおよび，talk_listen.launch.pyはテスト用です。
 
 ## テスト環境
-* Ubuntu 22.04.6 LTS
-* ROS2 Humble Hawksbil
+* Ubuntu 22.04 LTS
+* ROS2 Humble 
 
 ## 開発環境
 * ubuntu20.04 LTS
-* ROS2 Humble Hawksbil
+* ROS2 Foxy
 
 ## 使用方法
 ### このコマンドで適当な場所にクローンしてください。
