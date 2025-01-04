@@ -1,6 +1,6 @@
 # mypkg
 
-[![test]()
+[![test](https://github.com/ryuryurex/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/ryuryurex/mypkg/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/License-BSD--3--Clause-blue.svg)](https://github.com/ryuryurex/mypkg/blob/main/LICENSE)
 
 ## 概要
