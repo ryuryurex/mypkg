@@ -5,9 +5,15 @@
 
 ## 概要
 - ロボットシステム学の授業で使用したROS2パッケージです。
-- [Open-Meteo API](https://open-meteo.com/)によって習志野市の気象情報をトピックにパブリッシュします。
-- 千葉県習志野市の天気情報を10秒ごとにweather_infoトピックにパブリッシュします。左から気温、風速、タイムスタンプで表示します。
+- [Open-Meteo API](https://open-meteo.com/)によって千葉県習志野市の天気情報を10秒ごとにweather_infoトピックにパブリッシュします。左から気温、風速、タイムスタンプで表示します。
 - listener.pyおよび，talk_listen.launch.pyはテスト用です。
+
+## ノード
+### weather_publisher
+天気情報を10秒ごとに取得し、トピックにパブリッシュします。
+## トピック
+### weather_info
+ノードからパブリッシュされたデータ(気温（摂氏）、風速（km/h）、タイムスタンプ（YYYY-MM-DD HH:MM:SS）)を持ちます
 
 ## テスト環境
 * Ubuntu 22.04 LTS
