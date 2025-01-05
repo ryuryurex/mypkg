@@ -15,11 +15,12 @@
 - weather_info:
 ノードからパブリッシュされたデータ（気温（摂氏）、風速（km/h）、タイムスタンプ（YYYY-MM-DD HH:MM:SS））を持ちます。
 
-## テスト環境
+## 動作環境
+### テスト環境
 * Ubuntu 22.04 LTS
 * ROS2 Humble 
 
-## 開発環境
+### 開発環境
 * ubuntu20.04 LTS
 * ROS2 Foxy
 
