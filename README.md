@@ -9,10 +9,10 @@
 - listener.pyおよび，talk_listen.launch.pyはテスト用です。
 
 ## ノード
-- weather_publisher:
+### weather_publisher:
 天気情報を10秒ごとに取得し、トピックにパブリッシュします。
 ## トピック
-- weather_info:
+### weather_info:
 ノードからパブリッシュされたデータ(気温（摂氏）、風速（km/h）、タイムスタンプ（YYYY-MM-DD HH:MM:SS）)を持ちます。
 
 ## テスト環境
